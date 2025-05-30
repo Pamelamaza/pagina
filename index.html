@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oh Sky</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0faff;
+      background-color: #f0f8ff;
       color: #333;
     }
-
     header {
-      background-color: #b3e5fc; /* Celeste pastel */
+      background: linear-gradient(to right, #cfefff, #ffffff);
       padding: 20px;
       text-align: center;
     }
-
+    header img {
+      height: 80px;
+    }
     header h1 {
-      margin: 0;
-      font-size: 3em;
-      color: #007ea7;
+      margin: 10px 0 5px;
+      font-size: 2.5em;
+      color: #6ec6ff;
     }
-
     header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
+      margin: 0;
       font-style: italic;
+      color: #89c4e1;
     }
-
     nav {
-      background-color: #81d4fa;
+      background-color: #dff6ff;
       display: flex;
       justify-content: center;
+      gap: 30px;
       padding: 10px 0;
     }
-
     nav a {
-      color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.1em;
+      color: #0077b6;
       font-weight: bold;
-      transition: color 0.3s ease;
     }
-
-    nav a:hover {
-      color: #004d60;
-    }
-
     section {
-      padding: 40px;
-      text-align: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-
-    footer {
-      background-color: #b3e5fc;
+    .banner {
       text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      color: #555;
+      background-color: #e0f7ff;
+      padding: 60px 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .banner h2 {
+      color: #00aaff;
+      font-size: 2em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #cdefff;
+      color: #5e9ca0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
+    <img src="logo.png" alt="Logo Oh Sky">
     <h1>Oh Sky</h1>
-    <p>"Cada detalle cuenta, cada amor brilla"</p>
+    <p>Cada detalle cuenta, cada amor brilla</p>
   </header>
 
   <nav>
     <a href="#inicio">Inicio</a>
-    <a href="#sobremi">Sobre mí</a>
-    <a href="#producto">Producto</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#productos">Productos</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section id="inicio">
+  <section id="inicio" class="banner">
     <h2>Bienvenidos a Oh Sky</h2>
-    <p>Descubre piezas únicas llenas de amor y detalle.</p>
+    <p>Explora productos únicos hechos con amor y dedicación.</p>
   </section>
 
-  <section id="sobremi">
+  <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <p>Hola, soy la creadora detrás de Oh Sky. Amo los pequeños detalles que hacen grandes momentos.</p>
+    <p>Hola, soy la creadora de Oh Sky. Esta tienda nace del amor por los detalles, el arte y la magia de hacer brillar cada momento.</p>
   </section>
 
-  <section id="producto">
-    <h2>Nuestros Productos</h2>
-    <p>Desde joyas personalizadas hasta detalles decorativos. Todo hecho con amor.</p>
+  <section id="productos">
+    <h2>Productos</h2>
+    <p>Aquí irán tus productos destacados. Puedes agregar imágenes, descripciones y enlaces a tus redes sociales o tienda online.</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Tienes alguna pregunta? ¡Contáctanos en ohsky@example.com!</p>
+    <p>¿Tienes preguntas o deseas un pedido personalizado? Escríbeme a: <a href="wa.me/593981272321">contacto@ohsky.com</a></p>
   </section>
 
   <footer>
-    © 2025 Oh Sky - Todos los derechos reservados
+    <p>&copy; 2025 Oh Sky. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
