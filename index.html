@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oh Sky - Inspiración que Eleva</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oh Sky</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #D0E8F2; /* celeste pastel */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0faff;
       color: #333;
     }
 
     header {
-      background-color: #B2DDF1;
-      padding: 2rem;
+      background-color: #b3e5fc; /* Celeste pastel */
+      padding: 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      color: #3C6E71;
+      font-size: 3em;
+      color: #007ea7;
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #555;
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      font-style: italic;
     }
 
-    .cta-section {
+    nav {
+      background-color: #81d4fa;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 4rem 2rem;
-      text-align: center;
+      padding: 10px 0;
     }
 
-    .cta-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #2E5266;
-    }
-
-    .cta-section p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-    }
-
-    .cta-button {
-      background-color: #72B5D7;
+    nav a {
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
 
-    .cta-button:hover {
-      background-color: #5CAAC9;
+    nav a:hover {
+      color: #004d60;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
     }
 
     footer {
-      background-color: #B2DDF1;
+      background-color: #b3e5fc;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Oh Sky</h1>
-    <p>Inspiración que eleva tus días y transforma tu rutina</p>
+    <p>"Cada detalle cuenta, cada amor brilla"</p>
   </header>
 
-  <section class="cta-section">
-    <h2>Descubre una nueva forma de inspirarte</h2>
-    <p>
-      En Oh Sky creemos en el poder de los pequeños detalles. Ya sea con nuestros productos artesanales o contenido cuidadosamente diseñado, buscamos elevar tu día a día con un toque de magia.
-    </p>
-    <button class="cta-button">Únete a nuestra comunidad</button>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobremi">Sobre mí</a>
+    <a href="#producto">Producto</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos a Oh Sky</h2>
+    <p>Descubre piezas únicas llenas de amor y detalle.</p>
+  </section>
+
+  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy la creadora detrás de Oh Sky. Amo los pequeños detalles que hacen grandes momentos.</p>
+  </section>
+
+  <section id="producto">
+    <h2>Nuestros Productos</h2>
+    <p>Desde joyas personalizadas hasta detalles decorativos. Todo hecho con amor.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta? ¡Contáctanos en ohsky@example.com!</p>
   </section>
 
   <footer>
-    &copy; 2025 Oh Sky. Todos los derechos reservados.
+    © 2025 Oh Sky - Todos los derechos reservados
   </footer>
+
 </body>
 </html>
-
