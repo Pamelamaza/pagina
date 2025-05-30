@@ -5,35 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oh Sky</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #e0f7fa;
+      background-color: #ffffff;
       color: #004d40;
     }
     header {
-      background-color: #00bcd4;
-      color: white;
-      padding: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #b3e5fc; /* Celeste pastel */
+      color: #004d40;
+      padding: 15px 30px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-    }
-    header img {
-      height: 50px;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     nav a {
-      color: white;
+      color: #004d40;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      padding: 40px 20px;
-      background-color: white;
+      padding: 100px 20px 60px;
+      background-color: #ffffff;
       margin: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .inicio {
+      text-align: center;
+      background-color: #e1f5fe; /* Fondo más suave para inicio */
+      padding-top: 140px;
+    }
+    .inicio img {
+      max-width: 220px;
+      margin: 20px auto;
     }
     .whatsapp-button {
       display: inline-block;
@@ -48,40 +65,49 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #00bcd4;
-      color: white;
+      background-color: #b3e5fc;
+      color: #004d40;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Barra de navegación -->
   <header>
-    <div style="display: flex; align-items: center;">
-      <img src="imagenes/Logo  OhSky (7).png" alt="Logo Oh Sky" />
-      <h1 style="margin-left: 15px;">Oh Sky</h1>
-    </div>
+    <div><strong>Oh Sky</strong></div>
     <nav>
-      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
-      <a href="#contacto">Contáctame</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Bienvenidos a Oh Sky. Somos una tienda especializada en detalles y regalos hechos con amor. Nuestra misión es crear momentos especiales a través de productos únicos y personalizados.</p>
+  <!-- Sección de Inicio -->
+  <section class="inicio" id="inicio">
+    <h1>Bienvenidos a Oh Sky</h1>
+    <img src="URL-DE-TU-LOGO-AQUI" alt="Logo Oh Sky" />
+    <p>Detalles y regalos que enamoran 💙</p>
   </section>
 
+  <!-- Sección Productos -->
   <section id="productos">
     <h2>Productos</h2>
     <p>Explora nuestra selección de regalos personalizados, kits sorpresa, detalles únicos para toda ocasión y mucho más.</p>
   </section>
 
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy la creadora de Oh Sky. Me encanta diseñar detalles que transmitan emociones y dejen huella en cada ocasión especial.</p>
+  </section>
+
+  <!-- Sección Contacto -->
   <section id="contacto">
     <h2>Contáctame</h2>
     <p>¿Tienes preguntas o quieres hacer un pedido personalizado? Escríbeme por WhatsApp:</p>
-    <a class="whatsapp-button" href="wa.me/593981272321" target="_blank">
+    <a class="whatsapp-button" href="https://wa.me/549XXXXXXXXXX" target="_blank">
       📱 Contáctame en WhatsApp
     </a>
   </section>
@@ -92,4 +118,3 @@
 
 </body>
 </html>
-
