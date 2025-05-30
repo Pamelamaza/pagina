@@ -2,118 +2,111 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Oh Sky</title>
   <style>
-    html {
-      scroll-behavior: smooth;
+    :root {
+      --azul-pastel: #A7C7E7;
+      --blanco: #ffffff;
+      --gris-suave: #f7f7f7;
+      --texto: #333;
     }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #004d40;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gris-suave);
+      color: var(--texto);
     }
+
     header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #b3e5fc; /* Celeste pastel */
-      color: #004d40;
-      padding: 15px 30px;
+      background-color: var(--azul-pastel);
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--blanco);
+    }
+
     nav a {
-      color: #004d40;
-      margin: 0 15px;
+      margin-left: 1.5rem;
       text-decoration: none;
-      font-weight: bold;
+      color: var(--blanco);
+      font-weight: 500;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #f0f8ff;
     }
-    section {
-      padding: 100px 20px 60px;
-      background-color: #ffffff;
-      margin: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .inicio {
-      text-align: center;
-      background-color: #e1f5fe; /* Fondo más suave para inicio */
-      padding-top: 140px;
+
+    .section h2 {
+      color: var(--azul-pastel);
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    .inicio img {
-      max-width: 220px;
-      margin: 20px auto;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 16px;
-      margin-top: 20px;
-    }
+
     footer {
+      background-color: var(--azul-pastel);
+      color: var(--blanco);
       text-align: center;
-      padding: 20px;
-      background-color: #b3e5fc;
-      color: #004d40;
-      margin-top: 40px;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- Barra de navegación -->
   <header>
-    <div><strong>Oh Sky</strong></div>
+    <h1>Oh Sky</h1>
     <nav>
       <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- Sección de Inicio -->
-  <section class="inicio" id="inicio">
-    <h1>Bienvenidos a Oh Sky</h1>
-    <img src="imagenes/Logo  OhSky (7).png" alt="Logo Oh Sky" />
-    <p>Detalles y regalos que enamoran 💙</p>
+  <section id="inicio" class="section">
+    <h2>Bienvenido a Oh Sky</h2>
+    <p>En Oh Sky encontrarás detalles y regalos únicos para cada ocasión. Nos dedicamos a crear momentos especiales con productos personalizados y llenos de amor.</p>
   </section>
 
-  <!-- Sección Productos -->
-  <section id="productos">
-    <h2>Productos</h2>
-    <p>Explora nuestra selección de regalos personalizados, kits sorpresa, detalles únicos para toda ocasión y mucho más.</p>
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Regalos personalizados</li>
+      <li>Detalles para eventos (bodas, baby showers, cumpleaños)</li>
+      <li>Cajas sorpresa y kits especiales</li>
+      <li>Envíos a domicilio</li>
+    </ul>
   </section>
 
-  <!-- Sección Sobre mí -->
-  <section id="sobre-mi">
+  <section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
-    <p>Hola, soy la creadora de Oh Sky. Me encanta diseñar detalles que transmitan emociones y dejen huella en cada ocasión especial.</p>
+    <p>Hola, soy la fundadora de Oh Sky. Este proyecto nació con la ilusión de compartir alegría a través de detalles únicos. Cada producto está hecho con dedicación y cariño.</p>
   </section>
 
-  <!-- Sección Contacto -->
-  <section id="contacto">
-    <h2>Contáctame</h2>
-    <p>¿Tienes preguntas o quieres hacer un pedido personalizado? Escríbeme por WhatsApp:</p>
-    <a class="whatsapp-button" href="wa.me/593981272321" target="_blank">
-      📱 Contáctame en WhatsApp
-    </a>
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme vía WhatsApp al <strong>+123456789</strong> o en redes sociales como <strong>@OhSky</strong>.</p>
+    <p>También puedes escribirnos a: <a href="mailto:contacto@ohsky.com">contacto@ohsky.com</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Oh Sky - Todos los derechos reservados
+    &copy; 2025 Oh Sky. Todos los derechos reservados.
   </footer>
 
 </body>
