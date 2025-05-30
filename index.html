@@ -2,312 +2,94 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OhSky - Detalles y Regalos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oh Sky</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
     }
-<header>
-  <!-- Aquí puedes poner tu logo -->
-  <img src="imagenes/Logo  OhSky (7).png" alt="Logo de OhSky" style="height:60px; margin-bottom:10px;">
-  
-  <h1>OhSky</h1>
-  <p>Detalles y regalos que emocionan</p>
-</header>
-
     header {
-      background-color: #ff6f61;
-      color: celeste;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #333;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0;
-    }
-
-    nav ul li a {
-      color: blanco;
-      padding: 15px 20px;
-      display: block;
-      text-decoration: none;
-    }
-
-    nav ul li a:hover {
-      background-color: #555;
-    }
-
-    main {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #ff6f61;
-    }
-
-    footer {
-      background-color: #f1f1f1;
+      background-color: #00bcd4;
+      color: white;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .whatsapp-button {
+      display: inline-block;
       background-color: #25D366;
       color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-      text-align: center;
-      line-height: 60px;
+      padding: 12px 24px;
+      border-radius: 30px;
       text-decoration: none;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
+      font-size: 16px;
+      margin-top: 20px;
     }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #00bcd4;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>OhSky</h1>
-    <p>Detalles y regalos que emocionan</p>
+    <div style="display: flex; align-items: center;">
+      <img src="URL-DE-TU-LOGO-AQUI" alt="Logo Oh Sky" />
+      <h1 style="margin-left: 15px;">Oh Sky</h1>
+    </div>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contáctame</a>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Bienvenidos a Oh Sky. Somos una tienda especializada en detalles y regalos hechos con amor. Nuestra misión es crear momentos especiales a través de productos únicos y personalizados.</p>
+  </section>
 
-  <main>
-    <!-- Sección Sobre mí -->
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy la creadora de OhSky. Este proyecto nace del amor por los detalles únicos, regalos personalizados y momentos especiales. Me apasiona ayudar a mis clientes a expresar cariño con creatividad. Cada pedido lo realizo con dedicación y mucho corazón.</p>
-    </section>
+  <section id="productos">
+    <h2>Productos</h2>
+    <p>Explora nuestra selección de regalos personalizados, kits sorpresa, detalles únicos para toda ocasión y mucho más.</p>
+  </section>
 
-    
-      
-
-    <!-- Sección Contacto -->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>¿Tienes una idea o quieres un regalo personalizado? Escríbenos directamente por WhatsApp.</p>
-      <p><strong>Horario de atención:</strong> Lunes a Sábado, 9am - 7pm</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5215512345678" target="_blank">Enviar mensaje</a></p>
-    </section>
-  </main>
+  <section id="contacto">
+    <h2>Contáctame</h2>
+    <p>¿Tienes preguntas o quieres hacer un pedido personalizado? Escríbeme por WhatsApp:</p>
+    <a class="whatsapp-button" href="https://wa.me/549XXXXXXXXXX" target="_blank">
+      📱 Contáctame en WhatsApp
+    </a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 OhSky. Todos los derechos reservados.</p>
-    <p>Instagram: @ohsky.detalles</p>
+    &copy; 2025 Oh Sky - Todos los derechos reservados
   </footer>
-
-  <!-- Botón flotante de WhatsApp Business con mensaje preescrito -->
-  <a href="<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OhSky - Detalles y Regalos</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff8f0;
-      color: #333;
-    }
-
-    header {
-      background-color: #ff6f61;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #333;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0;
-    }
-
-    nav ul li a {
-      color: white;
-      padding: 15px 20px;
-      display: block;
-      text-decoration: none;
-    }
-
-    nav ul li a:hover {
-      background-color: #555;
-    }
-
-    main {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #ff6f61;
-    }
-
-    .producto {
-      margin-bottom: 20px;
-    }
-
-    .producto img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      display: block;
-      margin-top: 10px;
-    }
-
-    footer {
-      background-color: #f1f1f1;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-      text-align: center;
-      line-height: 60px;
-      text-decoration: none;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>OhSky</h1>
-    <p>Detalles y regalos que emocionan</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <!-- Sección Sobre mí -->
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy la creadora de OhSky. Este proyecto nace del amor por los detalles únicos, regalos personalizados y momentos especiales. Me apasiona ayudar a mis clientes a expresar cariño con creatividad. Cada pedido lo realizo con dedicación y mucho corazón.</p>
-    </section>
-
-    <!-- Sección Productos con imágenes -->
-    <section id="productos">
-      <h2>Productos</h2>
-
-      <div class="producto">
-        <h3>Cajas sorpresa personalizadas</h3>
-        <!-- Reemplaza la URL por la que obtengas al subir tu imagen -->
-        <img src="https://i.imgur.com/EJmQhdS.jpg" alt="Caja sorpresa personalizada">
-      </div>
-
-      <div class="producto">
-        <h3>Globos con mensaje</h3>
-        <img src="https://i.imgur.com/Bs0Jg5J.jpg" alt="Globos con mensaje">
-      </div>
-
-      <div class="producto">
-        <h3>Regalos corporativos</h3>
-        <img src="https://i.imgur.com/2h3T4bQ.jpg" alt="Regalo corporativo">
-      </div>
-    </section>
-
-    <!-- Sección Contacto -->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>¿Tienes una idea o quieres un regalo personalizado? Escríbenos directamente por WhatsApp.</p>
-      <p><strong>Horario de atención:</strong> Lunes a Sábado, 9am - 7pm</p>
-      <p><strong>WhatsApp:</strong> <a href="wa.me/593981272321" target="_blank">Enviar mensaje</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 OhSky. Todos los derechos reservados.</p>
-    <p>Instagram: @ohsky.detalles</p>
-  </footer>
-
-  <!-- Botón flotante de WhatsApp Business con mensaje preescrito -->
-  <a href="wa.me/593981272321" 
-     class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
-    💬
-  </a>
 
 </body>
 </html>
-" 
-     class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
-    💬
-  </a>
 
-</body>
-</html>
